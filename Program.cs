@@ -1,2 +1,21 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿/* 1. программа, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа
+
+Console.WriteLine("Введите трёхзначное число N");
+int N = int.Parse(Console.ReadLine());
+int temp = (N/10)%10;
+Console.WriteLine($"вторая цифра числа - {temp}");
+*/
+
+// 2. программа, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет
+
+Console.WriteLine("Введите число N");
+int N = int.Parse(Console.ReadLine());
+if ((N*N/N)<100) Console.WriteLine("Третьей цифры нет");  // умножили и поделили на N, чтобы получить положительное число, иначе любое отрицательное число <100
+else {
+    int temp = (N/100)%10;
+    Console.WriteLine($"третья цифра числа - {temp}");
+}
+
+
+
+
